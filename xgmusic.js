@@ -1,11 +1,4 @@
 console.clear();
-setInterval(function(){
-    if(lastLog.indexOf("19060 ")!=-1){
-        console.clear();
-        console.log('%c欢迎进入WlenkShop 御坂10032号连接正常','color: #FDF2C0;background:#0C0912;padding:10px;border-radius:10px;font-size:24px;');
-    }
-},1);
-
 function randomNum(minNum,maxNum){ 
     switch(arguments.length){ 
         case 1: 

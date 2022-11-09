@@ -1,14 +1,4 @@
 console.clear();
-var lastLog;
-console.oldLogs = console.log;
-console.log = function(str,css){
-  if(css==null){
-    console.oldLogs(str);
-  }else{
-    console.oldLogs(str,css);
-  }
-  lastLog = str;
-}
 setInterval(function(){
     if(lastLog.indexOf("19060 ")!=-1){
         console.clear();
@@ -159,3 +149,8 @@ var loadStyle = function(url) {
 			var head = document.getElementsByTagName("head")[0];
 			head.appendChild(link);
 		};
+setTimeout(function(){
+    console.clear();
+    play();
+    console.log('%c欢迎进入WlenkShop 御坂10032号连接正常','color: #FDF2C0;background:#0C0912;padding:10px;border-radius:10px;font-size:24px;');
+},200);
